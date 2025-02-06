@@ -15,23 +15,22 @@ PARS = ["mean_temp", "mean_daily_max_temp", "mean_daily_min_temp", "max_temp_w_d
 TIMERES = "day"
 
 #Where we want data to go
+# We want to play around with MySQL
 # OUTPUT_FILE = "dmidata.csv"
 
+
 # Database Configuration
-DB_HOST = "localhost"  
-DB_USER = "root"  # Change to your MySQL username
-DB_PASSWORD = "Kapodistriako01!"  # Change to your MySQL password
-DB_NAME = "weather_dashboard"  # Change to your database name
-TABLE_NAME = "dmi_weather_data"  # Change to your table name
+# in config.py
 
 #Store information about data here
 META_FILE = "dmimeta.csv"
 
 # Your API key
-DMI_API_KEY = "5586f407-19de-43de-bf44-0506555ecc03"
+# in config.py
 
 print ("Starting script")
 
+from config import DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, TABLE_NAME, DMI_API_KEY
 from datetime import datetime
 import numpy as np
 import pandas as pd
