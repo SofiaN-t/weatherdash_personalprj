@@ -12,6 +12,10 @@
 # RH: prec_am (in 0.1 mm) (-1 voor <0.05 mm)
 # UG: rel_hum (in procenten)
 
+# Also check
+# https://www.knmi.nl/nederland-nu/klimatologie/daggegevens
+# For some descriptions
+
 # Libraries
 import csv
 import pandas as pd
