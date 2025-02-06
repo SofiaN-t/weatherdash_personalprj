@@ -1,0 +1,30 @@
+# Ignore virtual environments
+weather_dash/
+# Common virtual environment names
+venv/
+env/
+.venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor settings
+.vscode/
+*.sublime-workspace
+*.idea/
+
+# Ignore database files
+*.sqlite3
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore txt
+api_key.txt
