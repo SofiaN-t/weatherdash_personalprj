@@ -77,3 +77,8 @@ df.loc[df.Date<'2015-01-01']
 # Save 
 df.to_csv('data/clean/utrecht_weather_timeseries.csv', index=False)
 
+# Check how it looks
+# df = pd.read_csv('data/clean/utrecht_weather_timeseries.csv')
+# df.head()
+# df.mean_temp.mean()
+
