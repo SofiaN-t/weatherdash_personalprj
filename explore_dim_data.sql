@@ -71,15 +71,24 @@ SELECT obs_date, mean_wind_speed FROM dmi_weather_data ORDER BY mean_wind_speed 
 -- Find the rainiest days
 SELECT obs_date, acc_precip FROM dmi_weather_data ORDER BY acc_precip DESC LIMIT 10;
 
+-- Check what u see in PowerBI
 -- Get average temperature by month
 SELECT MONTH(obs_date) AS month, AVG(mean_temp) AS avg_temp
 FROM dmi_weather_data
-GROUP BY month
-ORDER BY month;
+GROUP BY MONTH
+ORDER BY MONTH;
 
 -- Get average precipitation by month
 SELECT MONTH(obs_date) AS month, AVG(acc_precip) AS avg_prec
 FROM dmi_weather_data
 GROUP BY month
 ORDER BY month;
+
+-- Get total sunshine by year
+SELECT YEAR(obs_date) AS year, SUM(bright_sunshine) AS sunshine_h
+FROM dmi_weather_data
+GROUP BY YEAR
+ORDER BY YEAR;
+
+ 
 
